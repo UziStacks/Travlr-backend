@@ -25,8 +25,8 @@ app.use(
 );
 
 // Define Routes
-
 app.use("/api/auth", require("./routers/userRouter"));
 app.use("/api/customers", require("./routers/customerRouter"));
+app.use("/api/destinations", require("./routers/destinations"));
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
